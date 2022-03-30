@@ -14,6 +14,12 @@
 		FA08FEA327EDE55A002FA9FF /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA08FEA127EDE55A002FA9FF /* CoreDataDemo.xcdatamodeld */; };
 		FA08FEA527EDE55E002FA9FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA08FEA427EDE55E002FA9FF /* Assets.xcassets */; };
 		FA08FEA827EDE55E002FA9FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA08FEA627EDE55E002FA9FF /* LaunchScreen.storyboard */; };
+		FA08FEB127EDED9A002FA9FF /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08FEAF27EDED9A002FA9FF /* Student+CoreDataClass.swift */; };
+		FA08FEB227EDED9A002FA9FF /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08FEB027EDED9A002FA9FF /* Student+CoreDataProperties.swift */; };
+		FA08FEB627EDEE08002FA9FF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA08FEB527EDEE08002FA9FF /* CoreData.framework */; };
+		FA08FEBA27EDF12E002FA9FF /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08FEB927EDF12E002FA9FF /* DatabaseHelper.swift */; };
+		FA08FEBE27EE0F91002FA9FF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08FEBD27EE0F91002FA9FF /* ListViewController.swift */; };
+		FA08FEC027EE0FC1002FA9FF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA08FEBF27EE0FC1002FA9FF /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		FA08FEA427EDE55E002FA9FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA08FEA727EDE55E002FA9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA08FEA927EDE55E002FA9FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA08FEAF27EDED9A002FA9FF /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA08FEB027EDED9A002FA9FF /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA08FEB527EDEE08002FA9FF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA08FEB927EDF12E002FA9FF /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		FA08FEBD27EE0F91002FA9FF /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		FA08FEBF27EE0FC1002FA9FF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA08FEB627EDEE08002FA9FF /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +57,7 @@
 			children = (
 				FA08FE9727EDE55A002FA9FF /* CoreDataDemo */,
 				FA08FE9627EDE55A002FA9FF /* Products */,
+				FA08FEB427EDEE08002FA9FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +72,13 @@
 		FA08FE9727EDE55A002FA9FF /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
-				FA08FE9827EDE55A002FA9FF /* AppDelegate.swift */,
-				FA08FE9A27EDE55A002FA9FF /* SceneDelegate.swift */,
+				FA08FEB327EDEDB4002FA9FF /* Delegates */,
+				FA08FEBC27EDF162002FA9FF /* Helper Class */,
+				FA08FEB027EDED9A002FA9FF /* Student+CoreDataProperties.swift */,
+				FA08FEAF27EDED9A002FA9FF /* Student+CoreDataClass.swift */,
 				FA08FE9C27EDE55A002FA9FF /* ViewController.swift */,
+				FA08FEBD27EE0F91002FA9FF /* ListViewController.swift */,
+				FA08FEBF27EE0FC1002FA9FF /* TableViewCell.swift */,
 				FA08FE9E27EDE55A002FA9FF /* Main.storyboard */,
 				FA08FEA427EDE55E002FA9FF /* Assets.xcassets */,
 				FA08FEA627EDE55E002FA9FF /* LaunchScreen.storyboard */,
@@ -68,6 +86,31 @@
 				FA08FEA127EDE55A002FA9FF /* CoreDataDemo.xcdatamodeld */,
 			);
 			path = CoreDataDemo;
+			sourceTree = "<group>";
+		};
+		FA08FEB327EDEDB4002FA9FF /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FA08FE9827EDE55A002FA9FF /* AppDelegate.swift */,
+				FA08FE9A27EDE55A002FA9FF /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		FA08FEB427EDEE08002FA9FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA08FEB527EDEE08002FA9FF /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA08FEBC27EDF162002FA9FF /* Helper Class */ = {
+			isa = PBXGroup;
+			children = (
+				FA08FEB927EDF12E002FA9FF /* DatabaseHelper.swift */,
+			);
+			path = "Helper Class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA08FEB227EDED9A002FA9FF /* Student+CoreDataProperties.swift in Sources */,
 				FA08FE9D27EDE55A002FA9FF /* ViewController.swift in Sources */,
 				FA08FEA327EDE55A002FA9FF /* CoreDataDemo.xcdatamodeld in Sources */,
+				FA08FEC027EE0FC1002FA9FF /* TableViewCell.swift in Sources */,
+				FA08FEBA27EDF12E002FA9FF /* DatabaseHelper.swift in Sources */,
 				FA08FE9927EDE55A002FA9FF /* AppDelegate.swift in Sources */,
 				FA08FE9B27EDE55A002FA9FF /* SceneDelegate.swift in Sources */,
+				FA08FEBE27EE0F91002FA9FF /* ListViewController.swift in Sources */,
+				FA08FEB127EDED9A002FA9FF /* Student+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
